@@ -1,4 +1,4 @@
-# demo01
+# vue-pdf-demo
 
 ## Project setup
 ```
