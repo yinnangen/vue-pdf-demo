@@ -20,5 +20,13 @@ npm run build
 npm run lint
 ```
 
+### 提示
+
+```
+预览pdf需要能用vpn才能看到demo效果
+```
+
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

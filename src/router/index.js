@@ -3,7 +3,7 @@ import { createRouter,createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    redirect: '/previewPDF1'
+    redirect: '/previewPDF2'
   },
   {
     name: 'previewPDF1',
