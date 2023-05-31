@@ -3,17 +3,24 @@ import { createRouter,createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    redirect: '/previewPDF2'
+    redirect: '/previewPDF1'
   },
   {
-    name: 'previewPDF1',
-    path: '/previewPDF1',
-    component: () => import('@/components/previewPDF.vue')
-  },
-  {
-    name: 'previewPDF2',
-    path: '/previewPDF2',
-    component: () => import('@/components/HelloWorld.vue')
+    name: 'home',
+    path: '/',
+    component: () => import('@/views/HomeView.vue'),
+    children: [
+      {
+        name: 'previewPDF1',
+        path: '/previewPDF1',
+        component: () => import('@/components/previewPDF.vue')
+      },
+      {
+        name: 'previewPDF2',
+        path: '/previewPDF2',
+        component: () => import('@/components/HelloWorld.vue')
+      }
+    ]
   }
 ];
 
